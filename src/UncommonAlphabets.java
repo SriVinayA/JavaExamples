@@ -1,3 +1,30 @@
+/*
+
+
+1: Extract the alphabets which are present only in any one of the array(Uncommon alphabets)
+2: Get the ascii values of all the extracted alphabets
+3: Calculate the sum of those ascii values, let us call it as sum1 and calulate single digit sum of sum1
+	i.e, keep adding the digits until you arrive at a single digit
+4: Return the single digit as output
+
+Note:
+1. Array size ranges from 1 to 15
+2. All the array elements are upper case alphabets
+
+Example1:
+input1: {'A', 'B', 'C'}
+input2: {'B', 'C'}
+ouput : 65 => 6+5 = 11
+		   => 1+1 = 2
+
+Example2:
+input1: {'G', 'Q', 'R'}
+input2: {'R', 'T', 'U'}
+ouput : 71 + 81 + 84 + 85 = 321
+		     => 3 + 2 + 1 = 6
+
+
+ */
 public class UncommonAlphabets {
     public static void main(String[] args) {
         char[] input1 = {'G', 'Q', 'R'};
