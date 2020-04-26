@@ -20,7 +20,6 @@ public class ScannerClass {
 
         Scanner sc = new Scanner(System.in);
 
-
         System.out.print("Enter an Integer : ");
         int a = sc.nextInt();
 

@@ -26,19 +26,19 @@ output: 1234347-false
 
 public class IsStepNumber {
     public static void main(String[] args) {
-        int input1 = 1234347; //67898
+        int input1 = 1234347; // 67898
         String s1 = String.valueOf(input1);
         int len = s1.length();
         int diff;
         boolean flag = false;
         String output;
 
-        if (len>1) {
-            for (int i = 0; i < len-1; i++) {
+        if (len > 1) {
+            for (int i = 0; i < len - 1; i++) {
                 int n1 = Character.getNumericValue(s1.charAt(i));
-                int n2 = Character.getNumericValue(s1.charAt(i+1));
-                diff = n2-n1;
-                if (diff==1 || diff==-1) {
+                int n2 = Character.getNumericValue(s1.charAt(i + 1));
+                diff = n2 - n1;
+                if (diff == 1 || diff == -1) {
                     flag = true;
                 } else {
                     flag = false;

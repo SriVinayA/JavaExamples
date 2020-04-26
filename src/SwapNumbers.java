@@ -4,16 +4,15 @@ public class SwapNumbers {
         float second = 24.5f;
 
         System.out.println("-----Before Swapping-----");
-        System.out.println("a = "+first);
-        System.out.println("b = "+second);
+        System.out.println("a = " + first);
+        System.out.println("b = " + second);
 
         first = first - second;
         second = first + second;
         first = second - first;
 
-
         System.out.println("-----After Swapping-----");
-        System.out.println("a = "+first);
-        System.out.println("b = "+second);
+        System.out.println("a = " + first);
+        System.out.println("b = " + second);
     }
 }

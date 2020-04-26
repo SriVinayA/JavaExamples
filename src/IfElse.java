@@ -6,12 +6,9 @@
 //        If n is even and greater than 20, print Not Weird
 //        Complete the stub code provided in your editor to print whether or not n is weird.
 
-
 import java.util.*;
 
 public class IfElse {
-
-
 
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -20,7 +17,7 @@ public class IfElse {
 
         scanner.close();
 
-        if(N % 2 != 0) {
+        if (N % 2 != 0) {
             System.out.println("Weird");
         } else if (N % 2 == 0) {
             if (N >= 2 && N <= 5) {

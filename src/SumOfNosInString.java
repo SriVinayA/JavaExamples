@@ -1,6 +1,6 @@
 public class SumOfNosInString {
     public static void main(String[] args) {
-        String input1 = "1W2i3p4r5o6"; //12345 //PBL //1W2i3p4r5o6
+        String input1 = "1W2i3p4r5o6"; // 12345 //PBL //1W2i3p4r5o6
         int input2 = 1;
         int sum = 0;
         String str = "";
@@ -9,7 +9,6 @@ public class SumOfNosInString {
         if (input1.isEmpty()) {
             str = "NULL";
         }
-
 
         // Numbers
         else if (input2 == 0) {
@@ -21,13 +20,12 @@ public class SumOfNosInString {
             }
             if (sum == 0) {
                 str = "ZERO";
-            } else{
+            } else {
                 str = Integer.toString(sum);
             }
         }
 
-
-        //Alphabets
+        // Alphabets
         else if (input2 == 1) {
             for (int i = 0; i < input1.length(); i++) {
                 char a = input1.charAt(i);
@@ -39,7 +37,6 @@ public class SumOfNosInString {
                 str = "ZERO";
             }
         }
-
 
         System.out.println(str);
     }

@@ -8,17 +8,15 @@ public class LeapYear {
         int year = sc.nextInt();
         boolean leap = false;
 
-        if (year%4==0) {
-            if (year%100==0) {
-                if (year%400==0) 
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0)
                     leap = true;
                 else
                     leap = false;
-            }
-            else
+            } else
                 leap = true;
-        }
-        else
+        } else
             leap = false;
 
         if (leap) {
