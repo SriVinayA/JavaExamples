@@ -1,3 +1,5 @@
+package HackerRank;
+
 import java.util.Scanner;
 
 class Loop_1 {

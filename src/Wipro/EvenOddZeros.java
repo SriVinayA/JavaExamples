@@ -1,3 +1,5 @@
+package Wipro;
+
 /*
 
 if input is +ve output 1st letter  = p

@@ -1,3 +1,5 @@
+package HackerRank;
+
 /*
 
         Input Format:
@@ -32,7 +34,6 @@
 import java.util.Scanner;
 
 public class OutputFormatting {
-
     public static void main(final String[] args) {
         final Scanner sc = new Scanner(System.in);
         System.out.println("================================");

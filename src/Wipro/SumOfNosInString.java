@@ -1,3 +1,5 @@
+package Wipro;
+
 public class SumOfNosInString {
     public static void main(String[] args) {
         String input1 = "1W2i3p4r5o6"; // 12345 //PBL //1W2i3p4r5o6

@@ -1,3 +1,5 @@
+package Wipro;
+
 /*
 
 StepNumber : Anumber is said to be Step Number if the difference between next or previous digits is 1 or -1

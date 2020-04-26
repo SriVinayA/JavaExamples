@@ -1,4 +1,4 @@
-package Loops_2;
+package HackerRank;
 
 import java.util.*;
 

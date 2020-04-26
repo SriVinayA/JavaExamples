@@ -1,3 +1,5 @@
+package Wipro;
+
 public class SumOfPrimeDigits {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package Wipro;
+
 /*
 
 
@@ -25,6 +27,7 @@ ouput : 71 + 81 + 84 + 85 = 321
 
 
  */
+
 public class UncommonAlphabets {
     public static void main(String[] args) {
         char[] input1 = { 'G', 'Q', 'R' };
