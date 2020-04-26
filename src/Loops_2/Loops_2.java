@@ -23,7 +23,7 @@ public class Loops_2 {
                 if (j == n - 1) {
                     System.out.format("%d%n", s);
                 } else {
-                    //System.out.format("%d ", s);
+                    System.out.format("%d ", s);
                 }
             }
         }
