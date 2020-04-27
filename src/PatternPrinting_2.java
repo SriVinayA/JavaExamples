@@ -15,7 +15,7 @@ public class PatternPrinting_2 {
         int n = 10;
 
         for (int row = 1; row <= n; row++) {
-            for (int space = 0; space < n - row; space++) {
+            for (int space = 1; space <= n - row; space++) {
                 System.out.print(" ");
             }
             for (int star = 1; star <= row; star++) {
