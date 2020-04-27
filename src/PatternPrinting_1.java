@@ -17,7 +17,7 @@ if n=10
 
 public class PatternPrinting_1 {
     public static void main(String[] args) {
-        int n=10;
+        int n = 10;
 
         for (int row = 1; row <= 10; row++) {
             for (int num = 1; num <= row; num++) {
