@@ -1,3 +1,18 @@
+/*
+
+         1
+        12A
+       123BA
+      1234CBA
+     12345DCBA
+    123456EDCBA
+   1234567FEDCBA
+  12345678GFEDCBA
+ 123456789HGFEDCBA
+12345678910IHGFEDCBA
+
+ */
+
 public class PatternPrinting_4 {
     public static void main(String[] args) {
         int n = 10;
