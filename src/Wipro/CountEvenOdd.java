@@ -17,7 +17,7 @@ public class CountEvenOdd {
                 count++;
             }
         }
-        if (input6 == "even") {
+        if (input6.equals("even")) {
             System.out.println(count);
         } else {
             System.out.println(len - count);
