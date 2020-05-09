@@ -1,15 +1,16 @@
 /*
 
 Sample Input
-
+------------
 5
 -150
 150000
 1500000000
 213333333333333333333333333333333333
 -100000000000000
-Sample Output
 
+Sample Output
+-------------
 -150 can be fitted in:
 * short
 * int

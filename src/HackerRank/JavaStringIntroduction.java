@@ -50,7 +50,6 @@ public class JavaStringIntroduction {
         Scanner sc = new Scanner(System.in);
         String A = "hello";
         String B = "java";
-        /* Enter your code here. Print output to STDOUT. */
         System.out.println(A.length() + B.length());
 
         int k = A.compareTo(B);
