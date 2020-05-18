@@ -12,12 +12,12 @@ public class SumOfSumsOfDigitsInCyclicOrder {
 
         int input1 = 582109;
 
-        String num = String.valueOf(input1);
+        String str = String.valueOf(input1);
         int sum = 0;
 
-        for (int i = 0; i < num.length(); i++) {
-            for (int j = i; j < num.length(); j++) {
-                sum += Integer.parseInt(String.valueOf(num.charAt(j)));
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i; j < str.length(); j++) {
+                sum += Character.getNumericValue(str.charAt(j));
             }
         }
         System.out.println(sum);
