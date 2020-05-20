@@ -9,7 +9,7 @@ PIN Generation:
 
 package Wipro;
 
-public class CreatePIN {
+public class PinGeneration {
     public static void main(String[] args) {
         int input1 = 190, input2 = 267, input3 = 853; // 9150
 
