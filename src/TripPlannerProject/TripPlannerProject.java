@@ -43,15 +43,16 @@ public class TripPlannerProject {
 
         int hours = days * 24;
         int minutes = hours * 60;
-        double perDay = usd / (1.0 * days);
-        double converted = usd * conversion;
-        double perDayConverted = usd * conversion / days;
-
         System.out.println("If you are travelling for " + days + " days that is the same as " + hours + " hours or "
                 + minutes + " minutes");
+
+        double perDay = usd / (1.0 * days);
         System.out.printf(
                 "If you are going to spend $" + usd + " USD that means per day you can spend up to $%.2f USD\n",
                 perDay);
+
+        double converted = usd * conversion;
+        double perDayConverted = usd * conversion / days;
         System.out.printf("Your total budget in " + currencySymbol + " is " + converted + " " + currencySymbol
                 + ", which per day is %.2f " + currencySymbol + "\n", perDayConverted);
     }
