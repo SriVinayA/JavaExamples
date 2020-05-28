@@ -5,7 +5,7 @@ public class SumOfPrimeDigits {
 
         int input1 = 1234561179;
         String s1 = String.valueOf(input1);
-        String s2 = "";
+        StringBuilder s2 = new StringBuilder();
         int num = 0;
         int len = s1.length();
         String output;
@@ -26,18 +26,18 @@ public class SumOfPrimeDigits {
                 }
             }
 
-            if (flag == "p") {
-                s2 += (char) (n + '0');
+            if (flag.equals("p")) {
+                s2.append((char) (n + '0'));
                 num += n;
             }
         }
 
-        if (s2.isEmpty()) {
+        if (s2.length() == 0) {
             char a = s1.charAt(0);
             char b = s1.charAt(len - 1);
             output = String.format("%c:%c", a, b);
         } else {
-            output = String.format("%s:%d", s2, num);
+            output = String.format("%s:%d", s2.toString(), num);
         }
         System.out.println(output);
     }

@@ -35,7 +35,7 @@ public class PinGeneration {
         int a1 = Character.getNumericValue(a);
         int b1 = Character.getNumericValue(b);
         int c1 = Character.getNumericValue(c);
-        int output = c1 > (a1 > b1 ? a1 : b1) ? c1 : (a1 > b1 ? a1 : b1);
+        int output = Math.max(c1, (Math.max(a1, b1)));
         return (char) (output + '0');
     }
 
@@ -43,7 +43,7 @@ public class PinGeneration {
         int a1 = Character.getNumericValue(a);
         int b1 = Character.getNumericValue(b);
         int c1 = Character.getNumericValue(c);
-        int output = c1 < (a1 < b1 ? a1 : b1) ? c1 : (a1 < b1 ? a1 : b1);
+        int output = Math.min(c1, (Math.min(a1, b1)));
         return (char) (output + '0');
     }
 }

@@ -11,8 +11,8 @@ public class CountEven {
         int[] input = { input1, input2, input3, input4, input5 };
         int num = 0;
 
-        for (int i = 0; i < input.length; i++) {
-            if (input[i] % 2 == 0) {
+        for (int value : input) {
+            if (value % 2 == 0) {
                 num++;
             }
         }

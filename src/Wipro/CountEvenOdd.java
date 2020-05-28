@@ -7,13 +7,13 @@ public class CountEvenOdd {
         int input3 = 19;
         int input4 = 14;
         int input5 = 115;
-        String input6 = "even";
+        String input6 = "odd";
 
         int[] input = { input1, input2, input3, input4, input5 };
         int count = 0;
         int len = input.length;
-        for (int i = 0; i < len; i++) {
-            if (input[i] % 2 == 0) {
+        for (int value : input) {
+            if (value % 2 == 0) {
                 count++;
             }
         }

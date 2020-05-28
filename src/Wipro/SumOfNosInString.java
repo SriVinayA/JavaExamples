@@ -35,7 +35,7 @@ public class SumOfNosInString {
                     str += a;
                 }
             }
-            if (str == "") {
+            if (str.equals("")) {
                 str = "ZERO";
             }
         }

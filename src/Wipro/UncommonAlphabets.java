@@ -41,7 +41,7 @@ public class UncommonAlphabets {
                     num2 = 0;
                     break;
                 } else {
-                    num2 = (int) c;
+                    num2 = c;
                 }
 
             }
@@ -54,7 +54,7 @@ public class UncommonAlphabets {
                     num2 = 0;
                     break;
                 } else {
-                    num2 = (int) c;
+                    num2 = c;
                 }
 
             }

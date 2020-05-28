@@ -14,14 +14,14 @@ if input is zero return "pz"
 public class EvenOddZeros {
     public static void main(String[] args) {
         int input1 = 163380;
-        String str = "";
+        StringBuilder str = new StringBuilder();
 
         if (input1 == 0) {
-            str += "pz";
+            str.append("pz");
         } else if (input1 > 0) {
-            str += "p";
+            str.append("p");
         } else {
-            str += "n";
+            str.append("n");
             input1 *= -1;
         }
 
@@ -30,11 +30,11 @@ public class EvenOddZeros {
             for (int i = 0; i < a.length(); i++) {
                 int n = a.charAt(i);
                 if (Character.getNumericValue(n) == 0) {
-                    str += "z";
+                    str.append("z");
                 } else if (Character.getNumericValue(n) % 2 == 0) {
-                    str += "e";
+                    str.append("e");
                 } else {
-                    str += "o";
+                    str.append("o");
                 }
             }
         }

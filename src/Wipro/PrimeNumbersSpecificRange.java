@@ -17,7 +17,7 @@ public class PrimeNumbersSpecificRange {
                     k = "p";
                 }
             }
-            if (k == "p") {
+            if (k.equals("p")) {
                 list.add(input1);
             }
             input1++;
