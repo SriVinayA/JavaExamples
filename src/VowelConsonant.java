@@ -8,15 +8,8 @@ public class VowelConsonant {
         char ch = Character.toLowerCase(sc.next().charAt(0));
 
         switch (ch) {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                System.out.println(ch + " is an Vowel");
-                break;
-            default:
-                System.out.println(ch + " is a Consonant");
+            case 'a', 'e', 'i', 'o', 'u' -> System.out.println(ch + " is an Vowel");
+            default -> System.out.println(ch + " is a Consonant");
         }
         sc.close();
     }

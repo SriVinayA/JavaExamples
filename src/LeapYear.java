@@ -12,19 +12,15 @@ public class LeapYear {
             if (year % 100 == 0) {
                 if (year % 400 == 0)
                     leap = true;
-                else
-                    leap = false;
             } else
                 leap = true;
-        } else
-            leap = false;
+        }
 
         if (leap) {
             System.out.format("%d is a leap year", year);
         } else {
             System.out.format("%d is not a leap year", year);
         }
-
         sc.close();
     }
 }
