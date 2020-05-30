@@ -16,13 +16,13 @@ Note:
 Example1:
 input1: {'A', 'B', 'C'}
 input2: {'B', 'C'}
-ouput : 65 => 6+5 = 11
+output : 65 => 6+5 = 11
 		   => 1+1 = 2
 
 Example2:
 input1: {'G', 'Q', 'R'}
 input2: {'R', 'T', 'U'}
-ouput : 71 + 81 + 84 + 85 = 321
+output : 71 + 81 + 84 + 85 = 321
 		     => 3 + 2 + 1 = 6
 
 
@@ -32,9 +32,23 @@ public class UncommonAlphabets {
     public static void main(String[] args) {
         char[] input1 = { 'G', 'Q', 'R' };
         char[] input2 = { 'R', 'T', 'U' };
+        int num;
+
+        num = getSum(input1, input2);
+        num += getSum(input2, input1);
+
+        System.out.println(SumOfDigits(num));
+    }
+
+    public static int SumOfDigits(int n) {
+        if (n == 0)
+            return 0;
+        return (n % 9 == 0) ? 9 : (n % 9);
+    }
+
+    public static int getSum(char[] input1, char[] input2) {
         int num1 = 0;
         int num2 = 0;
-
         for (char c : input1) {
             for (char d : input2) {
                 if (c == d) {
@@ -47,27 +61,6 @@ public class UncommonAlphabets {
             }
             num1 += num2;
         }
-
-        for (char c : input2) {
-            for (char d : input1) {
-                if (c == d) {
-                    num2 = 0;
-                    break;
-                } else {
-                    num2 = c;
-                }
-
-            }
-            num1 += num2;
-        }
-
-        System.out.println(SumOfDigits(num1));
-
-    }
-
-    private static int SumOfDigits(int n) {
-        if (n == 0)
-            return 0;
-        return (n % 9 == 0) ? 9 : (n % 9);
+        return num1;
     }
 }
