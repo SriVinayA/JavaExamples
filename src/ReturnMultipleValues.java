@@ -11,7 +11,16 @@ final class Person {
     }
 }
 
+// Return multiple values from a method in Java
 public class ReturnMultipleValues {
+    public static void main(String[] args) {
+        Person person = getDetails();
+
+        System.out.println("Name is " + person.name);
+        System.out.println("Age is " + person.age);
+        System.out.println("Gender is " + person.gender);
+    }
+
     public static Person getDetails() {
         // return person details from the method
         String name = "Ryan";
@@ -21,12 +30,4 @@ public class ReturnMultipleValues {
         return new Person(name, age, gender);
     }
 
-    // Return multiple values from a method in Java
-    public static void main(String[] args) {
-        Person person = getDetails();
-
-        System.out.println("Name is " + person.name);
-        System.out.println("Age is " + person.age);
-        System.out.println("Gender is " + person.gender);
-    }
 }
