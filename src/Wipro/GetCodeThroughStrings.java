@@ -42,6 +42,7 @@ package Wipro;
 public class GetCodeThroughStrings {
     public static void main(String[] args) {
         String input1 = "The Good The Bad and The Ugly";
+        
         String str = input1.replace(" ", "");
         int num = str.length();
         int result = 0;
