@@ -3,7 +3,7 @@ package Wipro;
 public class MostFreqOccurDigit {
     public static void main(String[] args) {
         int[] input1 = {1237, 202, 666, 140}; //6
-        int input2 = input1.length;
+        //int input2 = input1.length;
 
         int output=0;
 		int[] arr = new int[10];
