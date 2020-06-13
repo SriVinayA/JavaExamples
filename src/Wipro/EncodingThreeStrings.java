@@ -2,9 +2,9 @@ package Wipro;
 
 public class EncodingThreeStrings {
     public static void main(String[] args) {
-        String input1 = "abc";
-        String input2 = "wxyz";
-        String input3 = "mnopq";
+        String input1 = "John";
+        String input2 = "Johny";
+        String input3 = "Janardhan";
 
         String[] arr1 = new String[3];
         String[] arr2 = new String[3];
