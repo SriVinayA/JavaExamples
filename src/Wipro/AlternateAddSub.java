@@ -14,7 +14,7 @@ public class AlternateAddSub {
                 result += input1 - (input1 - 1);
                 input1 -= 2;
             }
-        } else if (input2 == 2){
+        } else if (input2 == 2) {
             result = input1;
             input1--;
             while (input1 > 0) {
