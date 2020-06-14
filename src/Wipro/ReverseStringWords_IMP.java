@@ -14,10 +14,9 @@
 
 package Wipro;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 
-public class ReverseStringWords {
+public class ReverseStringWords_IMP {
     public static void main(String[] args) {
         String input1 = "Wipro TechNologies, BangaLore";
         Random random = new Random();
