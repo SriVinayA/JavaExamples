@@ -18,7 +18,7 @@ public class FindPasswordStableUnstable {
         for (int i : arr) {
             if (checkStable(i)) {
                 stable += i;
-            } else{
+            } else {
                 unstable += i;
             }
         }
