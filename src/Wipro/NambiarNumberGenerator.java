@@ -17,14 +17,14 @@ public class NambiarNumberGenerator {
         int len = input.length();
         int sum = Character.getNumericValue(input.charAt(0));
         if (len > 1) {
-            num1(input, al, len, sum);
+            fun1(input, al, len, sum);
         } else {
             al.add(sum);
         }
         return al;
     }
 
-    public static void num1(String input, ArrayList<Integer> al, int len, int sum) {
+    public static void fun1(String input, ArrayList<Integer> al, int len, int sum) {
         for (int i = 1; i < len; i++) {
             int num1 = Character.getNumericValue(input.charAt(i));
             if (num1 % 2 == 0) {
