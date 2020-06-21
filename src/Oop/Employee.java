@@ -4,12 +4,19 @@ public class Employee {
     private int baseSalary;
     private int hourlyRate;
 
-    public Employee (int baseSalary, int hourlyRate){
+    public static int noOfEmployees;
+
+    public Employee(int baseSalary, int hourlyRate) {
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
+        noOfEmployees++;
     }
 
-    public Employee (int baseSalary){
+    public static void printNumberOfEmployees() {
+        System.out.println(noOfEmployees);
+    }
+
+    public Employee(int baseSalary) {
         this(baseSalary, 0);
     }
 
