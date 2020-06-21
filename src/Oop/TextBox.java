@@ -1,13 +1,13 @@
 package Oop;
 
 public class TextBox {
-    public String text = ""; //field
+    public String text = ""; // field
 
-    public void setText(String text){
+    public void setText(String text) {
         this.text = text;
     }
 
-    public void clear(){
+    public void clear() {
         text = "";
     }
 }
