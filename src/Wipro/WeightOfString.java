@@ -5,7 +5,7 @@ calculate total LETTERS weight of the string, special characters are ignored.
 a=A=1, b=B=2, and so on..
 
 if input2 = 0, vowels are ignored
-if input2 = 0, including vowels and consonants
+if input2 = 1, including vowels and consonants
 
 input1 = "Hello world"
 input2 = 0
