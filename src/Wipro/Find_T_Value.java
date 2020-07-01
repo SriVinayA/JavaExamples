@@ -22,11 +22,10 @@ public class Find_T_Value {
         }
 
         // Applying Rule_2
-        if (isPrime(t)) {
+        if (isPrime(t))
             output = t + input3;
-        } else {
+        else
             output = t - input3;
-        }
 
         System.out.println(output);
     }
