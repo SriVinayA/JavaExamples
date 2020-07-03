@@ -1,13 +1,13 @@
-package Oop;
+package Oop.RefactoringMortgageCalculator;
 
 import java.text.NumberFormat;
 
 public class MortgageReport {
 
     private final NumberFormat currency;
-    private Calculator calculator;
+    private final MortgageCalculator calculator;
 
-    public MortgageReport(Calculator calculator) {
+    public MortgageReport(MortgageCalculator calculator) {
         this.calculator = calculator;
         currency = NumberFormat.getCurrencyInstance();
     }
@@ -16,9 +16,8 @@ public class MortgageReport {
         System.out.println();
         System.out.println("PAYMENT SCHEDULE");
         System.out.println("----------------");
-        for (double balance : calculator.getRemainingBalances()) {
+        for (double balance : calculator.getRemainingBalances())
             System.out.println(currency.format(balance));
-        }
     }
 
     public void printMortgage() {

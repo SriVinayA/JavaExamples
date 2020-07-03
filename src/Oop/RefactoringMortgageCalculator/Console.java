@@ -1,9 +1,9 @@
-package Oop;
+package Oop.RefactoringMortgageCalculator;
 
 import java.util.Scanner;
 
 public class Console {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static double readNumber(String prompt) {
         return scanner.nextDouble();
