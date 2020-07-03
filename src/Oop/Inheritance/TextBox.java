@@ -1,6 +1,6 @@
 package Oop.Inheritance;
 
-public class TextBox {
+public class TextBox extends UIControl{
     private String text = ""; // field
 
     public void setText(String text) {
