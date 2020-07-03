@@ -1,28 +1,27 @@
 package Oop.Inheritance;
 
-public class TextBox extends UIControl{
-    private String text = ""; // field
+public class TextBox extends UIControl {
+  private String text = "";
 
-//    public TextBox() {
-//        super(true);
-//    }
+  // public TextBox() {
+  // super(true);
+  // }
 
+  @Override
+  public void render() {
+    System.out.println("Render TextBox");
+  }
 
-    @Override
-    public void render() {
-        System.out.println("Render TextBox");
-    }
+  @Override
+  public String toString() {
+    return text;
+  }
 
-    @Override
-    public String toString() {
-        return text;
-    }
+  public void setText(String text) {
+    this.text = text;
+  }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public void clear() {
-        text = "";
-    }
+  public void clear() {
+    text = "";
+  }
 }

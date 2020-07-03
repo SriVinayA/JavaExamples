@@ -1,23 +1,23 @@
 package Oop.Inheritance;
 
 public abstract class UIControl {
-    private boolean isEnabled = true;
+  private boolean isEnabled = true;
 
-//    public UIControl(boolean isEnabled) {
-//        this.isEnabled = isEnabled;
-//    }
+  // public UIControl(boolean isEnabled) {
+  // this.isEnabled = isEnabled;
+  // }
 
-    public abstract void render();
+  public abstract void render();
 
-    public  void enable() {
-        isEnabled = true;
-    }
+  public final void enable() {
+    isEnabled = true;
+  }
 
-    public void disable() {
-        isEnabled = false;
-    }
+  public void disable() {
+    isEnabled = false;
+  }
 
-    public boolean isEnabled() {
-        return isEnabled;
-    }
+  public boolean isEnabled() {
+    return isEnabled;
+  }
 }

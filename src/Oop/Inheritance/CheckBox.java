@@ -1,8 +1,8 @@
 package Oop.Inheritance;
 
-public final class CheckBox extends UIControl{
-    @Override
-    public void render() {
-        System.out.println("Render CheckBox");
-    }
+public final class CheckBox extends UIControl {
+  @Override
+  public void render() {
+    System.out.println("Render CheckBox");
+  }
 }
