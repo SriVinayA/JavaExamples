@@ -2,9 +2,7 @@ package Oop.Inheritance;
 
 public class Main {
     public static void main(String[] args) {
-        var control = new TextBox();
-        control.clear();
-        control.disable();
-        System.out.println(control.isEnabled());
+        var box1 = new TextBox();
+        System.out.println(box1.hashCode());
     }
 }
