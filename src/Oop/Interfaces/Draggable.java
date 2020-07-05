@@ -1,6 +1,5 @@
 package Oop.Interfaces;
 
 public interface Draggable {
-    void drag();
-
+  void drag();
 }
