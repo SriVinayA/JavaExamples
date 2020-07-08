@@ -3,7 +3,7 @@ package DateTime;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DateFormattingUsingSimpleDateFormat {
+public class DateFormattingUsing_SimpleDateFormat {
     public static void main(String[] args) {
         var date = new Date();
         var simpleDateFormat = new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
