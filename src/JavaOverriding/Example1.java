@@ -15,9 +15,9 @@ class Dog extends Animal {
     }
 }
 
-public class TestDog {
+public class Example1 {
     public static void main(String[] args) {
-        Animal b = new Dog();   // Animal reference but Dog object
-        b.move();   // runs the method in Dog class
+        Animal b = new Dog(); // Animal reference but Dog object
+        b.move(); // runs the method in Dog class
     }
 }
