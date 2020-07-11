@@ -1,4 +1,4 @@
-package JavaOveriding;
+package JavaOverriding;
 
 class Animal {
     public void move() {
