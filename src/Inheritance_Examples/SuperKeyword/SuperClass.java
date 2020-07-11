@@ -9,6 +9,6 @@ public class SuperClass {
 
     public static void main(String[] args) {
         var obj = new SubClass();
-
+        obj.my_method();
     }
 }
