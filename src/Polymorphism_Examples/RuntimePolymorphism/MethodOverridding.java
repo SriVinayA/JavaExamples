@@ -7,12 +7,14 @@ class Parent {
 }
 
 class subclass1 extends Parent {
+    @Override
     void Print() {
         System.out.println("subclass1");
     }
 }
 
 class subclass2 extends Parent {
+    @Override
     void Print() {
         System.out.println("subclass2");
     }
