@@ -1,7 +1,6 @@
 package Polymorphism_Examples.CompileTimePolymorphism;
 
 class OperatorOVERDDN {
-
     void operator(String str1, String str2) {
         String s = str1 + str2;
         System.out.println("Concatinated String - " + s);
