@@ -1,4 +1,4 @@
 package Interfaces_Examples;
 
-public class Animal {
+public interface Animal {
 }
