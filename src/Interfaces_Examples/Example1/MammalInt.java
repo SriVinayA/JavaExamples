@@ -1,4 +1,4 @@
-package Interfaces_Examples;
+package Interfaces_Examples.Example1;
 
 public class MammalInt implements Animal{
     @Override
