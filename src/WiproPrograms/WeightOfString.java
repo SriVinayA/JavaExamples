@@ -22,7 +22,7 @@ package WiproPrograms;
 public class WeightOfString {
     public static void main(String[] args) {
         String input1 = "Hello World";
-        int input2 = 1;
+        int input2 = 0;
         int sum = 0;
         String s = input1.toUpperCase();
         int len = input1.length();
@@ -30,9 +30,8 @@ public class WeightOfString {
             char letter = s.charAt(i);
             if (Character.isAlphabetic(letter)) {
                 if ((input2 == 0)
-                        && (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U'))
-                    sum = sum;
-                else
+                        && (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U')) {
+                } else
                     sum += letter - 64;
             }
         }
