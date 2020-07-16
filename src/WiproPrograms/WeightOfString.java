@@ -31,7 +31,7 @@ public class WeightOfString {
             if (Character.isAlphabetic(letter)) {
                 if ((input2 == 0)
                         && (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U'))
-                    sum += 0;
+                    sum = sum;
                 else
                     sum += letter - 64;
             }
