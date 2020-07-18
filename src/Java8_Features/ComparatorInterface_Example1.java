@@ -38,7 +38,7 @@ class Sortbyname implements Comparator<Student> {
     }
 }
 
-class Main {
+class ComparatorInterface_Example1 {
     public static void main (String[] args) {
         ArrayList<Student> studentArrayList = new ArrayList<>();
         studentArrayList.add(new Student(111, "bbbb", "london"));
