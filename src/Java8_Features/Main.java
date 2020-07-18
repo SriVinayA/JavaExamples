@@ -21,43 +21,43 @@ class Student {
     }
 }
 
+// Used for sorting in ascending order of roll number
 class Sortbyroll implements Comparator<Student> {
-    // Used for sorting in ascending order of roll number
-    public int compare(Student a, Student b) {
-        return a.rollno - b.rollno;
+    @Override
+    public int compare(Student o1, Student o2) {
+        return o1.rollno - o2.rollno;
     }
 }
 
+// Used for sorting in ascending order of roll name
 class Sortbyname implements Comparator<Student> {
-    // Used for sorting in ascending order of
-    // roll name
-    public int compare(Student a, Student b) {
-        return a.name.compareTo(b.name);
+    @Override
+    public int compare(Student o1, Student o2) {
+        return o1.name.compareTo(o2.name);
     }
 }
 
-// Driver class
 class Main {
-    public static void main(String[] args) {
-        ArrayList<Student> ar = new ArrayList<Student>();
+    public static void main (String[] args) {
+        ArrayList<Student> ar = new ArrayList<>();
         ar.add(new Student(111, "bbbb", "london"));
         ar.add(new Student(131, "aaaa", "nyc"));
         ar.add(new Student(121, "cccc", "jaipur"));
 
         System.out.println("Unsorted");
-        for (int i = 0; i < ar.size(); i++)
-            System.out.println(ar.get(i));
+        for (Student student : ar)
+            System.out.println(student);
 
         Collections.sort(ar, new Sortbyroll());
 
         System.out.println("\nSorted by rollno");
-        for (int i = 0; i < ar.size(); i++)
-            System.out.println(ar.get(i));
+        for (Student student : ar)
+            System.out.println(student);
 
         Collections.sort(ar, new Sortbyname());
 
         System.out.println("\nSorted by name");
-        for (int i = 0; i < ar.size(); i++)
-            System.out.println(ar.get(i));
+        for (Student student : ar)
+            System.out.println(student);
     }
 }
