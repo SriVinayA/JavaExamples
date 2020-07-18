@@ -40,25 +40,25 @@ class Sortbyname implements Comparator<Student> {
 
 class Main {
     public static void main (String[] args) {
-        ArrayList<Student> ar = new ArrayList<>();
-        ar.add(new Student(111, "bbbb", "london"));
-        ar.add(new Student(131, "aaaa", "nyc"));
-        ar.add(new Student(121, "cccc", "jaipur"));
+        ArrayList<Student> studentArrayList = new ArrayList<>();
+        studentArrayList.add(new Student(111, "bbbb", "london"));
+        studentArrayList.add(new Student(131, "aaaa", "nyc"));
+        studentArrayList.add(new Student(121, "cccc", "jaipur"));
 
         System.out.println("Unsorted");
-        for (Student student : ar)
+        for (Student student : studentArrayList)
             System.out.println(student);
 
-        Collections.sort(ar, new Sortbyroll());
+        studentArrayList.sort(new Sortbyroll());
 
         System.out.println("\nSorted by rollno");
-        for (Student student : ar)
+        for (Student student : studentArrayList)
             System.out.println(student);
 
-        Collections.sort(ar, new Sortbyname());
+        studentArrayList.sort(new Sortbyname());
 
         System.out.println("\nSorted by name");
-        for (Student student : ar)
+        for (Student student : studentArrayList)
             System.out.println(student);
     }
 }
