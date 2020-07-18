@@ -25,10 +25,10 @@ class Student2 {
 
     @Override
     public String toString() {
-        return "Student2{" + "Name='" + Name + '\'' + ", Age=" + Age + '}';
+        return "Name= " + Name + "  Age=" + Age;
     }
 
-    static class CustomerSortingComparator implements Comparator<Student2> {
+    static class StudentSortingComparator implements Comparator<Student2> {
         @Override
         public int compare(Student2 o1, Student2 o2) {
 
@@ -49,7 +49,7 @@ class Student2 {
         // create ArrayList to store Student2
         List<Student2> al = new ArrayList<>();
 
-        // create customer objects using constructor initialization
+        // create student objects using constructor initialization
         Student2 obj1 = new Student2("Ajay", 27);
         Student2 obj2 = new Student2("Sneha", 23);
         Student2 obj3 = new Student2("Simran", 37);
@@ -57,7 +57,7 @@ class Student2 {
         Student2 obj5 = new Student2("Ajay", 29);
         Student2 obj6 = new Student2("Sneha", 22);
 
-        // add customer objects to ArrayList
+        // add student objects to ArrayList
         al.add(obj1);
         al.add(obj2);
         al.add(obj3);
@@ -66,20 +66,20 @@ class Student2 {
         al.add(obj6);
 
         // before Sorting arraylist: iterate using Iterator
-        Iterator<Student2> custIterator = al.iterator();
+        Iterator<Student2> studentIterator = al.iterator();
 
         System.out.println("Before Sorting:\n");
-        while (custIterator.hasNext()) {
-            System.out.println(custIterator.next());
+        while (studentIterator.hasNext()) {
+            System.out.println(studentIterator.next());
         }
 
         // sorting using Collections.sort(al, comparator);
-        al.sort(new CustomerSortingComparator());
+        al.sort(new StudentSortingComparator());
 
         // after Sorting arraylist: iterate using enhanced for-loop
         System.out.println("\n\nAfter Sorting:\n");
-        for (Student2 customer : al) {
-            System.out.println(customer);
+        for (Student2 student : al) {
+            System.out.println(student);
         }
     }
 }
