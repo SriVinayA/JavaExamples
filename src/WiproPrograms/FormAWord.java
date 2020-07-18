@@ -24,6 +24,7 @@ e=e  => e
 
 output : BYE
 */
+package WiproPrograms;
 
 public class FormAWord {
     public static void main(String[] args) {
