@@ -16,6 +16,7 @@ class Student {
     }
 
     // Used to print student details in main()
+    @Override
     public String toString() {
         return this.rollno + " " + this.name + " " + this.address;
     }
