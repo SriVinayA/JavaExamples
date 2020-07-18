@@ -1,7 +1,6 @@
 package Java8_Features;
 
 import java.util.*;
-import java.lang.*;
 
 // A class to represent a student.
 class Student {
