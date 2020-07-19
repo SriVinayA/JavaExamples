@@ -1,4 +1,4 @@
-package Java8_Features;
+package Java8_Features.ComparatorInterface;
 
 import java.util.*;
 
