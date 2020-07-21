@@ -51,8 +51,8 @@ package WiproPrograms;
 
 public class FindTheOrder {
     public static void main(String[] args) {
-        String input1 = "ACZa";
-        String input2 = "CAZa";
+        String input1 = "tbGB";
+        String input2 = "tGBb";
 
         System.out.println(findTheOrder(input1, input2));
     }
@@ -61,15 +61,26 @@ public class FindTheOrder {
         String output;
         int[] arr = new int[input1.length()];
 
+        //adding ascii values into array
         for (int i = 0; i < input1.length(); i++) {
             char ch = input1.charAt(i);
             arr[i] = ch;
         }
 
+        //To count the number of alphabets which are misplaced is input2.
+        int count = 0;
+        for(int i=0;i<input1.length();i++) {
+            if(input1.charAt(i) != input2.charAt(i)) {
+                count = count + 1;
+            }
+        }
+
+        //To determine whether the array is increasing or decreasing or Invalid
         String IncDec = IncreasingOrDecreasing(arr);
-        if(IncDec.equals("Invalid")) return "Invalid";
+        if(IncDec.equals("Invalid"))
+            return "Invalid";
         else
-            output = String.format("%s:%d", IncDec, Math.abs(input1.compareTo(input2)));
+            output = String.format("%s:%d", IncDec, count);
 
         return output;
     }
