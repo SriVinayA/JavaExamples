@@ -71,15 +71,6 @@ public class FindTheOrder {
         else
             output = String.format("%s:%d", IncDec, Math.abs(input1.compareTo(input2)));
 
-//        if (IncreasingOrDecreasing(arr)) {
-//            if (Math.abs(input1.compareTo(input2)) > 0)
-//                IncDec = "Increasing";
-//            else
-//                IncDec = "Decreasing";
-//
-//            output = String.format("%s:%d", IncDec, Math.abs(input1.compareTo(input2)));
-//        } else return "Invalid";
-
         return output;
     }
 
