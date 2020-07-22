@@ -60,7 +60,7 @@ package WiproPrograms;
 
 public class FindStringCode {
     public static void main(String[] args) {
-        String input1 = "World Wide Web";
+        String input1 = "Hello World";
 
         input1 = input1.toUpperCase();
         String[] strArr = input1.split(" ");
@@ -86,9 +86,7 @@ public class FindStringCode {
     private static int getSum(String str, int sum, int len) {
         int k;
         for (int i = 0; i < len / 2; i++) {
-            k = (str.charAt(i) - 64) - (str.charAt(len - 1 - i) - 64);
-            if (k < 0)
-                k = -k;
+            k = Math.abs((str.charAt(i) - 64) - (str.charAt(len - 1 - i) - 64));
             sum += k;
         }
         return sum;
