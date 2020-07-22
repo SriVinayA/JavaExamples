@@ -84,9 +84,8 @@ public class FindStringCode {
     }
 
     private static int getSum(String str, int sum, int len) {
-        int k;
         for (int i = 0; i < len / 2; i++) {
-            k = Math.abs((str.charAt(i) - 64) - (str.charAt(len - 1 - i) - 64));
+            int k = Math.abs((str.charAt(i) - 64) - (str.charAt(len - 1 - i) - 64));
             sum += k;
         }
         return sum;
