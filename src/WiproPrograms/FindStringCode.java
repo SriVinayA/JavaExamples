@@ -64,11 +64,11 @@ public class FindStringCode {
 
         input1 = input1.toUpperCase();
         String[] strArr = input1.split(" ");
-        StringBuilder result = new StringBuilder();
+        String result = "";
         for (String s : strArr) {
-            result.append(sumOfDiff(s));
+            result += sumOfDiff(s);
         }
-        System.out.println(Integer.valueOf(result.toString()));
+        System.out.println(Integer.valueOf(result));
     }
 
     private static String sumOfDiff(String str) {
