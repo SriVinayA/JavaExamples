@@ -61,6 +61,7 @@ package WiproPrograms;
 public class FindStringCode {
     public static void main(String[] args) {
         String input1 = "World Wide Web";
+
         input1 = input1.toUpperCase();
         String[] strArr = input1.split(" ");
         StringBuilder result = new StringBuilder();
@@ -70,7 +71,7 @@ public class FindStringCode {
         System.out.println(Integer.valueOf(result.toString()));
     }
 
-    private static Object sumOfDiff(String str) {
+    private static String sumOfDiff(String str) {
         int sum = 0;
         int len = str.length();
         if (len % 2 == 1) {
