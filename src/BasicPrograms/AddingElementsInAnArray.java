@@ -9,7 +9,7 @@ public class AddingElementsInAnArray {
 
         System.out.println("Initial Array:\n" + Arrays.toString(arr));
 
-        List<Integer> arrList = new ArrayList<Integer>(Arrays.asList(arr));
+        List<Integer> arrList = new ArrayList<>(Arrays.asList(arr));
         arrList.add(x);
         arr = arrList.toArray(arr);
 
