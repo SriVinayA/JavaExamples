@@ -1,22 +1,23 @@
+package JDBC;
+
 import java.sql.*;
 
-public class DemoClass {
+public class JDBC01 {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		String url = "jdbc:mysql://localhost:3306/test";
 		String user = "root";
 		String password = "root";
-		int id = 6;
-		String name = "Vijay";
-		String query = "insert into students values(?, ?);";
+		String query = "select name from students where id=3";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection(url, user, password);
-		PreparedStatement st = con.prepareStatement(query);
-		st.setInt(1, id);
-		st.setString(2, name);
-		int count = st.executeUpdate();
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(query);
 		
-		System.out.println(count + " row(s) affected.");
+		rs.next();
+		String name = rs.getString("name");
+		
+		System.out.println(name);
 		
 		st.close();
 		con.close();
