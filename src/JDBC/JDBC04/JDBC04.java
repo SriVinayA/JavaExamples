@@ -1,9 +1,6 @@
-package JDBC;
+package JDBC.JDBC04;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 public class JDBC04 {
     public static void main(String[] args) {
